@@ -24,6 +24,11 @@ class HomeScreen extends StatelessWidget {
             icon: const Icon(Icons.history),
           ),
           IconButton(
+            onPressed: () => Navigator.of(context).pushNamed('/profile'),
+            tooltip: 'Profil',
+            icon: const Icon(Icons.person),
+          ),
+          IconButton(
             onPressed: () {
               AuthService.logout();
               Navigator.of(context).pushReplacementNamed('/login');

@@ -6,6 +6,7 @@ import 'ui/screens/checkout_screen.dart';
 import 'ui/screens/home_screen.dart';
 import 'ui/screens/login_screen.dart';
 import 'ui/screens/orders_screen.dart';
+import 'ui/screens/profile_screen.dart';
 import 'ui/screens/register_screen.dart';
 import 'ui/screens/welcome_screen.dart';
 
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         '/car': (_) => const CarDetailScreen(),
         '/checkout': (_) => const CheckoutScreen(),
         '/orders': (_) => const OrdersScreen(),
+        '/profile': (_) => const ProfileScreen(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
